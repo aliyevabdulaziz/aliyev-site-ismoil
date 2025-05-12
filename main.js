@@ -1,3 +1,12 @@
+if ('performance' in window && 'PerformanceObserver' in window) {
+  const observer = new PerformanceObserver(list => {
+    for (const entry of list.getEntries()) {
+      // Log LCP, FID, CLS metrics
+      console.log(`${entry.name}: ${entry.startTime}`, entry);
+    }
+  });
+  observer.observe({ entryTypes: ['largest-contentful-paint', 'first-input', 'layout-shift'] });
+}
 // Modal functionality
 document.addEventListener('DOMContentLoaded', function () {
 	const modal = document.getElementById('registrationModal');
@@ -131,14 +140,3 @@ document.addEventListener('DOMContentLoaded', function () {
 		}
 	});
 });
-
-
-if ('performance' in window && 'PerformanceObserver' in window) {
-	const observer = new PerformanceObserver(list => {
-		for (const entry of list.getEntries()) {
-			// Log LCP, FID, CLS metrics
-			console.log(`${entry.name}: ${entry.startTime}`, entry);
-		}
-	});
-	observer.observe({ entryTypes: ['largest-contentful-paint', 'first-input', 'layout-shift'] });
-}
