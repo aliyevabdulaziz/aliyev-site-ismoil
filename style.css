@@ -108,15 +108,17 @@ body {
 
 .register-button {
     display: inline-block;
-    background-color: #C92A2A;
+    background:linear-gradient(0.283turn, rgba(163, 26, 26, 1) 0%, rgba(231, 64, 64, 1) 50%, rgba(163, 26, 26, 1) 100%); ;
     color: white;
     font-weight: 600;
     padding: 15px 40px;
-    border-radius: 5px;
+    border-radius: 50px;
     text-decoration: none;
     font-size: 18px;
     transition: background-color 0.3s;
     text-align: center;
+    box-shadow:0px 5px 0px 0px rgba(126, 33, 33, 1);
+
 }
 
 .register-button:hover {
@@ -165,6 +167,29 @@ body {
     position: relative;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
     animation: modalFadeIn 0.3s ease-out;
+}
+
+.footer{
+background-color: black;
+}
+
+.footer a:hover{
+  color: #ffffff;
+}
+
+.footer a{
+  text-decoration: none;
+  color: #555;
+  font-weight: 700;
+  transition: all .4s ease;
+}
+
+.link{
+  display: flex;
+  align-items: center;
+}
+.link img{
+margin: 0 10px;
 }
 
 @keyframes modalFadeIn {
@@ -270,34 +295,25 @@ body {
     text-decoration: underline;
 }
 
-
-.footer{
-background-color: black;
+.success-message{
+  text-align: center;
 }
 
-.footer a:hover{
+.close-success-button{
+  font-size: 20px;
+  padding: 15px 30px;
+  border: none;
+  background-color:#A52222;
   color: #ffffff;
-}
-
-.footer a{
-  text-decoration: none;
-  color: #555;
   font-weight: 700;
-  transition: all .4s ease;
-}
-
-.link{
-  display: flex;
-  align-items: center;
-}
-.link img{
-margin: 0 10px;
+  margin-top: 20px;
 }
 
 /* Responsive Design */
 @media (max-width: 992px) {
     .content {
-        flex-direction: column;
+        flex-direction: row-reverse;
+        align-items: end;
     }
 
     .left-section {
@@ -307,9 +323,13 @@ margin: 0 10px;
     }
 
     .right-section {
-        display: none;
+        order: 1;
+        margin-bottom: 30px;
     }
 
+    .speaker-image {
+        max-width: 500px;
+    }
 }
 
 @media (max-width: 768px) {
@@ -324,6 +344,10 @@ margin: 0 10px;
     .register-button {
         width: 100%;
         padding: 12px 20px;
+    }
+
+    .right-section{
+      display: none;
     }
 }
 
