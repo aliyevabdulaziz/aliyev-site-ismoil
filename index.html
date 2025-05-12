@@ -5,160 +5,149 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ismoil Nabijonov - Amerika Logistikasi bo'yicha 2 kunlik BEPUL dars</title>
 
-    <!-- Performance Meta Tags -->
-    <meta http-equiv="x-dns-prefetch-control" content="on">
-    <meta name="description" content="Amerika Logistikasida $1000 oylik daromadga chiqish yo'llari haqida bepul dars">
+    <!-- Meta tags for SEO and caching -->
+    <meta name="description" content="Amerika Logistikasida $1000 oylik daromadga chiqish yo'llari haqida Ismoil Nabijonovdan 2 kunlik BEPUL dars">
+    <meta http-equiv="Cache-Control" content="max-age=86400">
 
-    <!-- Preconnect & DNS Prefetch -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="dns-prefetch" href="https://fonts.googleapis.com">
-    <link rel="dns-prefetch" href="https://fonts.gstatic.com">
+    <!-- Preload critical assets -->
+    <link rel="preload" href="img/image_6-min.webp" as="image" fetchpriority="high" type="image/webp">
 
-    <!-- Preload Critical Resources -->
-    <link rel="preload" href="style.css" as="style">
-    <link rel="preload" href="main.js" as="script">
-    <link rel="preload" as="image" href="img/image_6-min.webp" fetchpriority="high" type="image/webp">
-    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" as="style">
-
-    <!-- Inline Critical CSS -->
+    <!-- Inline critical CSS -->
     <style>
+      /* Critical CSS for above-the-fold content */
       * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
 
-body {
-    font-family: 'Montserrat', sans-serif;
-    background-color: #ffffff;
-    color: #333;
-    line-height: 1.6;
-}
+      body {
+        font-family: 'Montserrat', sans-serif;
+        background-color: #ffffff;
+        color: #333;
+        line-height: 1.6;
+      }
 
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
 
-.content {
-    display: flex;
-    width: 100%;
-    align-items: center;
-}
+      .content {
+        display: flex;
+        width: 100%;
+        align-items: center;
+      }
 
-.left-section {
-    flex: 1;
-    padding-right: 40px;
-}
+      .left-section {
+        flex: 1;
+        padding-right: 40px;
+      }
 
-.right-section {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+      .right-section {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
 
-/* Date and Time Pill */
-.date-time-pill {
-    display: inline-block;
-    border: 1px solid #C92A2A;
-    border-radius: 50px;
-    padding: 10px 20px;
-    margin-bottom: 20px;
-    color: #333;
-    font-weight: 500;
-}
+      .date-time-pill {
+        display: inline-block;
+        border: 1px solid #C92A2A;
+        border-radius: 50px;
+        padding: 10px 20px;
+        margin-bottom: 20px;
+        color: #333;
+        font-weight: 500;
+      }
 
-/* Author Info */
-.author-info {
-    font-size: 16px;
-    margin-bottom: 15px;
-    color: #555;
-}
+      .author-info {
+        font-size: 16px;
+        margin-bottom: 15px;
+        color: #555;
+      }
 
-/* Main Title */
-.main-title {
-    font-size: 32px;
-    font-weight: 700;
-    margin-bottom: 20px;
-    color: #333;
-    line-height: 1.3;
-}
+      .main-title {
+        font-size: 32px;
+        font-weight: 700;
+        margin-bottom: 20px;
+        color: #333;
+        line-height: 1.3;
+      }
 
-/* Description */
-.description {
-    font-size: 16px;
-    margin-bottom: 30px;
-    color: #555;
-}
+      .description {
+        font-size: 16px;
+        margin-bottom: 30px;
+        color: #555;
+      }
 
-/* Benefits Section */
-.benefits-section {
-    margin-bottom: 30px;
-}
+      .cta-button {
+        margin: 30px 0 15px;
+      }
 
-.benefits-title {
-    font-size: 20px;
-    font-weight: 600;
-    margin-bottom: 20px;
-    color: #333;
-}
+      .register-button {
+        display: inline-block;
+        background-color: #C92A2A;
+        color: white;
+        font-weight: 600;
+        padding: 15px 40px;
+        border-radius: 5px;
+        text-decoration: none;
+        font-size: 18px;
+        text-align: center;
+      }
 
-.benefit-item {
-    display: flex;
-    margin-bottom: 15px;
-    align-items: flex-start;
-}
+      .speaker-image {
+        width: 100%;
+        max-width: 500px;
+      }
 
-.benefit-icon {
-    margin-right: 15px;
-    flex-shrink: 0;
-    margin-top: 3px;
-}
+      .speaker-photo {
+        width: 100%;
+        height: auto;
+        border-radius: 5px;
+      }
 
-.benefit-text {
-    font-size: 16px;
-    color: #444;
-}
+      @media (max-width: 992px) {
+        .content {
+          flex-direction: column;
+        }
 
-/* Hide modal initially */
-.modal {
-    display: none;
-}
+        .left-section {
+          padding-right: 0;
+          margin-bottom: 40px;
+          order: 2;
+        }
 
-/* CTA Button */
-.cta-button {
-    margin: 30px 0 15px;
-}
+        .right-section {
+          order: 1;
+          margin-bottom: 30px;
+        }
 
-.register-button {
-    display: inline-block;
-    background-color: #C92A2A;
-    color: white;
-    font-weight: 600;
-    padding: 15px 40px;
-    border-radius: 5px;
-    text-decoration: none;
-    font-size: 18px;
-    text-align: center;
-}
+        .speaker-image {
+          max-width: 300px;
+        }
+      }
     </style>
 
-    <!-- Non-critical CSS deferred -->
-    <link rel="stylesheet" href="style.css" media="print" onload="this.media='all'">
-    <noscript><link rel="stylesheet" href="style.css"></noscript>
+    <!-- Defer non-critical CSS -->
+    <link rel="stylesheet" href="styles/non-critical.css" media="print" onload="this.media='all'">
+    <noscript>
+        <link rel="stylesheet" href="styles/non-critical.css">
+    </noscript>
 
-    <!-- Font loading optimized -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap"
-          media="print" onload="this.media='all'">
+    <!-- Preload fonts with font-display: swap -->
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" as="style" onload="this.rel='stylesheet'">
     <noscript>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap">
     </noscript>
+
+    <!-- Defer JavaScript -->
+    <script defer src="scripts/main.js"></script>
 </head>
 <body>
     <div class="container">
@@ -227,15 +216,16 @@ body {
 
             <div class="right-section">
                 <div class="speaker-image">
-                    <img src="img/image_6-min.webp" alt="Ismoil Nabijonov" class="speaker-photo" width="400" height="500" fetchpriority="high" decoding="async">
+                    <img src="img/image_6-min.webp" alt="Ismoil Nabijonov" class="speaker-photo" width="500" height="600" fetchpriority="high" decoding="async">
                 </div>
             </div>
         </div>
     </div>
 
+    <!-- Modal -->
     <div id="registrationModal" class="modal">
         <div class="modal-content">
-            <span class="close-button">&times;</span>
+            <span class="close-button">×</span>
             <h2 class="modal-title">BEPUL darsga ro'yxatdan o'ting</h2>
             <p class="modal-description">Ma'lumotlaringizni kiriting va darsda qatnashish uchun joy band qiling</p>
 
@@ -262,18 +252,15 @@ body {
         </div>
     </div>
 
-
     <footer class="footer">
       <div class="container">
-        <a href="https://tilda.cc/ru/">
-          <div class="link">
-            Made on <img src="img/tildacopy.png" alt="icon" width="30" height="15" loading="lazy"> Tilda
-        </div>
-      </a>
+        <a href="https://tilda.cc/ru/" class="link">
+          Made on <img src="img/tildacopy.png" alt="Tilda icon" width="30" height="15" loading="lazy">
+          Tilda
+        </a>
       </div>
     </footer>
 
-    <!-- JavaScript deferred loading -->
     <script src="main.js" defer></script>
 </body>
 </html>
