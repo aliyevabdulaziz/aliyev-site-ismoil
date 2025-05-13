@@ -1,217 +1,225 @@
 <!DOCTYPE html>
 <html lang="uz">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Ismoil Nabijonov - Amerika Logistikasi bo'yicha 2 kunlik BEPUL dars</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ismoil Nabijonov - Amerika Logistikasi bo'yicha 2 kunlik BEPUL dars</title>
 
-		<!-- Preload critical assets -->
-		<link rel="preload" href="style.css" as="style" />
-		<link rel="preload" href="img/image_6-min.webp" as="image" fetchpriority="high" />
+    <!-- Preconnect for font loading -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
-		<!-- Inline critical CSS -->
-		<style>
-			/* Critical CSS for above-the-fold content */
-			body {
-				margin: 0;
-				padding: 0;
-				font-family:  sans-serif;
-				background-color: #fff;
-				color: #333;
-				line-height: 1.6;
-			}
-			.container {
-				max-width: 1200px;
-				margin: 0 auto;
-				padding: 20px;
-				display: flex;
-				align-items: center;
-				justify-content: center;
-			}
-			.content {
-				display: flex;
-				width: 100%;
-				align-items: center;
-			}
-			.left-section {
-				flex: 1;
-				padding-right: 40px;
-			}
-			.right-section {
-				flex: 1;
-				display: flex;
-				justify-content: center;
-				align-items: center;
-			}
-			.date-time-pill {
-				display: inline-block;
-				border: 1px solid #c92a2a;
-				border-radius: 50px;
-				padding: 10px 20px;
-				margin-bottom: 20px;
-				color: #333;
-				font-weight: 500;
-			}
-			.main-title {
-				font-size: 32px;
-				font-weight: 700;
-				margin-bottom: 20px;
-				color: #333;
-				line-height: 1.3;
-			}
-			.register-button {
-				display: inline-block;
-				background: linear-gradient(0.283turn, rgba(163, 26, 26, 1) 0%, rgba(231, 64, 64, 1) 50%, rgba(163, 26, 26, 1) 100%);
-				color: white;
-				font-weight: 600;
-				padding: 15px 40px;
-				border-radius: 50px;
-				text-decoration: none;
-				font-size: 18px;
-				text-align: center;
-				box-shadow: 0 5px 0 0 rgba(126, 33, 33, 1);
-			}
-			.speaker-photo {
-				width: 100%;
-				height: auto;
-				border-radius: 5px;
-			}
-			@media (max-width: 768px) {
-				.right-section {
-					display: none;
-				}
-			}
-		</style>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
 
-		<!-- Defer non-critical CSS -->
-		<link rel="stylesheet" href="style.css" media="print" onload="this.media='all'" />
+    <!-- Preload critical CSS and image -->
+    <link rel="preload" href="style.css" as="style" />
+    <link rel="preload" href="img/image_6-min.webp" as="image" fetchpriority="high" />
 
-		<!-- Defer font loading -->
+    <!-- Inline Critical CSS -->
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: 'Roboto', sans-serif;
+        background-color: #fff;
+        color: #333;
+        line-height: 1.6;
+      }
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .content {
+        display: flex;
+        width: 100%;
+        align-items: center;
+      }
+      .left-section {
+        flex: 1;
+        padding-right: 40px;
+      }
+      .right-section {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .date-time-pill {
+        display: inline-block;
+        border: 1px solid #c92a2a;
+        border-radius: 50px;
+        padding: 10px 20px;
+        margin-bottom: 20px;
+        color: #333;
+        font-weight: 500;
+      }
+      .main-title {
+        font-size: 32px;
+        font-weight: 700;
+        margin-bottom: 20px;
+        color: #333;
+        line-height: 1.3;
+      }
+      .register-button {
+        display: inline-block;
+        background: linear-gradient(0.283turn, #a31a1a 0%, #e74040 50%, #a31a1a 100%);
+        color: white;
+        font-weight: 600;
+        padding: 15px 40px;
+        border-radius: 50px;
+        text-decoration: none;
+        font-size: 18px;
+        text-align: center;
+        box-shadow: 0 5px 0 0 #7e2121;
+      }
+      .speaker-photo {
+        width: 100%;
+        max-width: 500px;
+        height: auto;
+        border-radius: 5px;
+      }
+      @media (max-width: 768px) {
+        .right-section {
+          display: none;
+        }
+      }
+    </style>
 
-		<!-- Fallback for browsers that don't support JS -->
-		<noscript>
-			<link rel="stylesheet" href="style.css" />
+    <!-- Defer non-critical CSS -->
+    <link rel="stylesheet" href="style.css" media="print" onload="this.media='all'" />
 
-		</noscript>
-	</head>
-	<body>
-		<div class="container">
-			<div class="content">
-				<div class="left-section">
-					<div class="date-time-pill">
-						<span>VAQTI: 17-18 MAY | 20:00</span>
-					</div>
+    <!-- Fallback for non-JS browsers -->
+    <noscript><link rel="stylesheet" href="style.css" /></noscript>
+  </head>
 
-					<p class="author-info">Ismoil Nabijonovdan 2 kunlik BEPUL dars</p>
+  <body>
+    <div class="container">
+      <div class="content">
+        <div class="left-section">
+          <div class="date-time-pill">
+            <span>VAQTI: 17-18 MAY | 20:00</span>
+          </div>
 
-					<h1 class="main-title">Qanday qilib Amerika Logistikasida $1000 oylik daromadga chiqish mumkin? ROADMAP!</h1>
+          <p class="author-info">Ismoil Nabijonovdan 2 kunlik BEPUL dars</p>
+          <h1 class="main-title">Qanday qilib Amerika Logistikasida $1000 oylik daromadga chiqish mumkin? ROADMAP!</h1>
+          <p class="description">2 kunlik onlayn darsda US Logistics'da daromad qilishni aniq qadamlarini BEPULga o'rganasiz</p>
 
-					<p class="description">2 kunlik onlayn darsda US Logistics'da daromad qilishni aniq qadamlarini BEPULga o'rganasiz</p>
+          <div class="benefits-section">
+            <h2 class="benefits-title">Bepul darsda siz:</h2>
 
-					<div class="benefits-section">
-						<h2 class="benefits-title">Bepul darsda siz:</h2>
+            <!-- Benefit item -->
+            <div class="benefit-item">
+              <div class="benefit-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="12" cy="12" r="12" fill="#C92A2A" />
+                  <path d="M7 12L10 15L17 8" stroke="white" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </div>
+              <p class="benefit-text">Amerika Logistikasi nima, qanday soha ekanligini</p>
+            </div>
 
-						<div class="benefit-item">
-							<div class="benefit-icon">
-								<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<circle cx="12" cy="12" r="12" fill="#C92A2A" />
-									<path d="M7 12L10 15L17 8" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-								</svg>
-							</div>
-							<p class="benefit-text">Amerika Logistikasi nima, qanday soha ekanligini</p>
-						</div>
+            <div class="benefit-item">
+              <div class="benefit-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="12" cy="12" r="12" fill="#C92A2A" />
+                  <path d="M7 12L10 15L17 8" stroke="white" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </div>
+              <p class="benefit-text">Ishlash uchun talablarni</p>
+            </div>
 
-						<div class="benefit-item">
-							<div class="benefit-icon">
-								<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<circle cx="12" cy="12" r="12" fill="#C92A2A" />
-									<path d="M7 12L10 15L17 8" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-								</svg>
-							</div>
-							<p class="benefit-text">Ishlash uchun talablarni</p>
-						</div>
+            <div class="benefit-item">
+              <div class="benefit-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="12" cy="12" r="12" fill="#C92A2A" />
+                  <path d="M7 12L10 15L17 8" stroke="white" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </div>
+              <p class="benefit-text">Qaysi yo'nalishda qancha daromad qilishni</p>
+            </div>
 
-						<div class="benefit-item">
-							<div class="benefit-icon">
-								<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<circle cx="12" cy="12" r="12" fill="#C92A2A" />
-									<path d="M7 12L10 15L17 8" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-								</svg>
-							</div>
-							<p class="benefit-text">Qaysi yo'nalishda qancha daromad qilishni</p>
-						</div>
+            <div class="benefit-item">
+              <div class="benefit-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="12" cy="12" r="12" fill="#C92A2A" />
+                  <path d="M7 12L10 15L17 8" stroke="white" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </div>
+              <p class="benefit-text">Ish topish va $1000 ga chiqish aniq ketma-ketligini bilib olasiz 🔥</p>
+            </div>
+          </div>
 
-						<div class="benefit-item">
-							<div class="benefit-icon">
-								<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<circle cx="12" cy="12" r="12" fill="#C92A2A" />
-									<path d="M7 12L10 15L17 8" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-								</svg>
-							</div>
-							<p class="benefit-text">Ish topish va $1000 ga chiqish aniq ketma-ketligini bilib olasiz 🔥</p>
-						</div>
-					</div>
+          <div class="cta-button">
+            <a href="#" class="register-button">RO'YXATDAN O'TISH</a>
+          </div>
+          <p class="note">Hoziroq ro'yxatdan o'ting! Joylar cheklangan!</p>
+        </div>
 
-					<div class="cta-button">
-						<a href="#" class="register-button">RO'YXATDAN O'TISH</a>
-					</div>
+        <div class="right-section">
+          <div class="speaker-image">
+            <img
+              src="img/image_6-min.webp"
+              alt="Ismoil Nabijonov"
+              class="speaker-photo"
+              width="500"
+              height="750"
+              loading="eager"
+              fetchpriority="high" />
+          </div>
+        </div>
+      </div>
+    </div>
 
-					<p class="note">Hoziroq ro'yxatdan o'ting! Joylar cheklangan!</p>
-				</div>
+    <!-- Modal Section -->
+    <div id="registrationModal" class="modal">
+      <div class="modal-content">
+        <span class="close-button">&times;</span>
+        <h2 class="modal-title">BEPUL darsga ro'yxatdan o'ting</h2>
+        <p class="modal-description">Ma'lumotlaringizni kiriting va darsda qatnashish uchun joy band qiling</p>
 
-				<div class="right-section">
-					<div class="speaker-image">
-						<img
-							src="img/image_6-min.webp"
-							alt="Ismoil Nabijonov"
-							class="speaker-photo"
-							loading="eager"
-							fetchpriority="high"
-							width="500"
-							height="auto" />
-					</div>
-				</div>
-			</div>
-		</div>
+        <form id="registrationForm" class="registration-form">
+          <div class="form-group">
+            <label for="fullName">To'liq ismingiz</label>
+            <input type="text" id="fullName" name="fullName" placeholder="Ismingizni kiriting" required />
+          </div>
+          <div class="form-group">
+            <label for="phoneNumber">Telefon raqamingiz</label>
+            <input type="tel" id="phoneNumber" name="phoneNumber" placeholder="+998 XX XXX XX XX" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email manzilingiz</label>
+            <input type="email" id="email" name="email" placeholder="email@example.com" />
+          </div>
+          <button type="submit" class="submit-button">RO'YXATDAN O'TISH</button>
+        </form>
 
-		<div id="registrationModal" class="modal">
-			<div class="modal-content">
-				<span class="close-button">&times;</span>
-				<h2 class="modal-title">BEPUL darsga ro'yxatdan o'ting</h2>
-				<p class="modal-description">Ma'lumotlaringizni kiriting va darsda qatnashish uchun joy band qiling</p>
+        <p class="privacy-note">Ro'yxatdan o'tish orqali siz <a href="#">maxfiylik siyosati</a> shartlariga rozilik bildirasiz</p>
+      </div>
+    </div>
 
-				<form id="registrationForm" class="registration-form">
-					<div class="form-group">
-						<label for="fullName">To'liq ismingiz</label>
-						<input type="text" id="fullName" name="fullName" placeholder="Ismingizni kiriting" required />
-					</div>
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <a href="https://tilda.cc/ru/">
+          <div class="link">Made on <img src="img/tildacopy.png" alt="icon" width="30" height="30" loading="lazy" /> Tilda</div>
+        </a>
+      </div>
+    </footer>
 
-					<div class="form-group">
-						<label for="phoneNumber">Telefon raqamingiz</label>
-						<input type="tel" id="phoneNumber" name="phoneNumber" placeholder="+998 XX XXX XX XX" required />
-					</div>
-
-					<div class="form-group">
-						<label for="email">Email manzilingiz</label>
-						<input type="email" id="email" name="email" placeholder="email@example.com" />
-					</div>
-
-					<button type="submit" class="submit-button">RO'YXATDAN O'TISH</button>
-				</form>
-
-				<p class="privacy-note">Ro'yxatdan o'tish orqali siz <a href="#">maxfiylik siyosati</a> shartlariga rozilik bildirasiz</p>
-			</div>
-		</div>
-
-		<footer class="footer">
-			<div class="container">
-				<a href="https://tilda.cc/ru/">
-					<div class="link">Made on <img src="img/tildacopy.png" alt="icon" width="30" height="30" /> Tilda</div>
-				</a>
-			</div>
-		</footer>
-
-		<!-- Defer JavaScript loading -->
-		<script src="main.js" defer></script>
-	</body>
+    <!-- JavaScript -->
+    <script src="main.js" defer></script>
+  </body>
 </html>
